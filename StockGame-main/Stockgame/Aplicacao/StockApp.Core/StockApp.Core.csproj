@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstracao\**" />
+    <Compile Remove="Modelo\**" />
+    <Compile Remove="Servico\**" />
+    <EmbeddedResource Remove="Abstracao\**" />
+    <EmbeddedResource Remove="Modelo\**" />
+    <EmbeddedResource Remove="Servico\**" />
+    <None Remove="Abstracao\**" />
+    <None Remove="Modelo\**" />
+    <None Remove="Servico\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
